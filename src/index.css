@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: 'Fredoka', cursive, system-ui, -apple-system, sans-serif;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Soporte para Safe Area en dispositivos móviles (Notch / Barra de gestos) */
+header {
+  padding-top: calc(env(safe-area-inset-top, 0px) + 0.75rem);
+}
+
+footer {
+  padding-bottom: calc(env(safe-area-inset-bottom, 0px) + 1.25rem);
+}
